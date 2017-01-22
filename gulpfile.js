@@ -42,7 +42,7 @@ gulp.task("build", function(){
 });
 
 //Watch task
-gulp.task('default', ['connect', 'styles'], function() {
+gulp.task('default', ['connect', 'styles', 'build'], function() {
     gulp.watch('sass/**/*.scss',['styles']);
     gulp.watch('js/main.js', ['build']);
 });

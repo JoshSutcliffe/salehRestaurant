@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="salehRestaurant">
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <script type="text/javascript" src="https://opensource.keycdn.com/angularjs/1.5.8/angular.min.js 
+"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script type="text/javascript" src="js/controllers/controller.js"></script>
+  <script type="text/javascript" src="./../build/bundle.js"></script>
 
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
 </head>
-<body>
-<h1>abdulla is a prick</h1>
+<body ng-controller="mainController">
+
+	<!-- MAIN CONTENT AND INJECTED VIEWS -->
+	<div id="main">
+	  <!-- angular templating -->
+	  <!-- this is where content will be injected -->
+	  <div ng-view></div>
+
+	</div>
+	
 </body>
 </html>
