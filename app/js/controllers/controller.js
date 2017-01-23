@@ -25,21 +25,30 @@
 	  .when('/contact', {
           templateUrl : '../views/contact.html',
           controller  : 'contactController'
+	  })
+      
+      // route for the menu page
+	  .when('/menu', {
+          templateUrl : '../views/menu.html',
+          controller  : 'menuController'
 	  });
   });
 
   // create the controller and inject Angular's $scope
   salehRestaurant.controller('mainController', function($scope) {
-      // create a message to display in our view
-      $scope.message = 'Everyone come and see how good I look!';
+
   });
 
   salehRestaurant.controller('aboutController', function($scope) {
-      $scope.message = 'Look! I am an about page.';
+
   });
 
   salehRestaurant.controller('contactController', function($scope) {
-      $scope.message = 'Contact us! JK. This is just a demo.';
+
+  });
+    
+  salehRestaurant.controller('menuController', function($scope) {
+
   });
 })();
 
