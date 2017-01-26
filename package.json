@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular-ui-router": "^0.4.2",
     "babelify": "^7.3.0",
     "browserify": "^13.3.0",
     "gulp": "^3.9.1",
