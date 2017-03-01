@@ -17,7 +17,7 @@ gulp.task('connect', function () {
 gulp.task('styles', function() {
     gulp.src('app/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('app/css/'));
+        .pipe(gulp.dest('app/css/main.css'));
 });
 
 //Copy static files from html folder to build folder

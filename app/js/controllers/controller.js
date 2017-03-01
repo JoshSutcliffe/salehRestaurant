@@ -12,7 +12,7 @@
 	  // route for the home page
 	  .when('/', {
           templateUrl : '../views/home.html',
-          controller  : 'mainController'
+          controller  : 'homeController'
 	  })
 
 	  // route for the about page
@@ -37,12 +37,13 @@
   });
 
   // create the controller and inject Angular's $scope
-  salehRestaurant.controller('mainController', function($scope) {
+  salehRestaurant.controller('homeController', function($scope) {
 
   });
 
   salehRestaurant.controller('aboutController', function($scope) {
-
+    console.log($scope);
+    $scope.apply();
   });
 
   salehRestaurant.controller('contactController', function($scope) {
@@ -57,7 +58,7 @@
 // (function() {
 // 	var app = angular.module("restaurant", []);
 
-// 	app.controller('MainController', ['$scope', function($scope) { 
+// 	app.controller('homeController', ['$scope', function($scope) { 
 // 	  $scope.title = 'Top Sellers in Books'; 
 // 	}]);
 // })();
