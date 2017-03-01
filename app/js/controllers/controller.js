@@ -43,7 +43,7 @@
 
   salehRestaurant.controller('aboutController', function($scope) {
     console.log($scope);
-    $scope.apply();
+    // $scope.apply();
   });
 
   salehRestaurant.controller('contactController', function($scope) {
